@@ -1,0 +1,7 @@
+#Sun Apr 12 18:07:14 CDT 2020
+base.0=/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
