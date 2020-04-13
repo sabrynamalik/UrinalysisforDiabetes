@@ -21,6 +21,7 @@ import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.View;
@@ -218,7 +219,9 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
             }
 
             Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
-
+            CalcResult calcResult = new CalcResult(bitmap);
+            int res = calcResult.findNearest();
+            Log.i("! CALC NEAREST@@@@@@@@@@@", "" + res);
 
             //make preview available again
             camera.startPreview();
@@ -301,8 +304,16 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
     }
 
     public void startTest() {
-        mediaPlayer.start();
-        takePicture();
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mediaPlayer.start();
+                takePicture();
+            }
+        }, 2000); // Millisecond 1000 = 1 sec
+
     }
 
 

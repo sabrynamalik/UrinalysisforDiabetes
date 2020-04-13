@@ -19,7 +19,7 @@
 13-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:6:19-57
 14
 15    <application
-15-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-29:19
+15-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-28:19
 16        android:allowBackup="true"
 16-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:9:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -68,9 +68,6 @@
 35-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:27-74
 36            </intent-filter>
 37        </activity>
-38        <activity android:name="com.sabry.log.NewTest" />
-38-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:9-45
-38-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:19-42
-39    </application>
-40
-41</manifest>
+38    </application>
+39
+40</manifest>
