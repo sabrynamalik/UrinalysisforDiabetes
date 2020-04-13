@@ -18,7 +18,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Urinalysis for Diabetes"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
@@ -27,8 +27,11 @@
         <activity android:name="com.sabry.log.ForgotPassword" />
         <activity android:name="com.sabry.log.LogHome" />
         <activity android:name="com.sabry.log.homescreen" />
+        <activity android:name="com.sabry.log.Results" />
+        <activity android:name="com.sabry.log.EmailActivity" />
         <activity android:name="com.sabry.log.Reg" />
         <activity android:name="com.sabry.log.NewTest" />
+        <activity android:name="com.sabry.log.AboutUs" />
         <activity android:name="com.sabry.log.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

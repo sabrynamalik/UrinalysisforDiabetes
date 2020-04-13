@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.949" />
 
     <Button
-        android:id="@+id/buttonemail3"
+        android:id="@+id/emailButt"
         android:layout_width="357dp"
         android:layout_height="101dp"
         android:text="Email Results!"
@@ -58,7 +58,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ketone # :"
+        android:text="Ketone (mg/dL ):"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,15 +68,15 @@
         app:layout_constraintVertical_bias="0.312" />
 
     <TextView
-        android:id="@+id/txt_ketone"
-        android:layout_width="23dp"
+        android:id="@+id/ketoneTxt"
+        android:layout_width="100dp"
         android:layout_height="43dp"
         android:text="3...."
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.319" />
 

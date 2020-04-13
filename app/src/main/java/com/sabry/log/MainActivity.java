@@ -48,14 +48,7 @@ public class MainActivity extends AppCompatActivity {
         // get Email, Password input text
         txtUsername = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
-        redcapButt = (Button) findViewById(R.id.redcapButt);
 
-        redcapButt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openRedCap();
-            }
-        });
 
         Toast.makeText(getApplicationContext(),
                 "User Login Status: " + session.isUserLoggedIn(),
@@ -156,11 +149,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void openRedCap() {
-        Uri uri = Uri.parse("https://redcap.vanderbilt.edu/surveys/?s=YN4MR3AR7L");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
+
 
   /*
     @Override

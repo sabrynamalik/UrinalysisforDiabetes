@@ -19,7 +19,7 @@
 13-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:6:19-57
 14
 15    <application
-15-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-28:19
+15-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-31:19
 16        android:allowBackup="true"
 16-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:9:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -27,8 +27,8 @@
 18        android:debuggable="true"
 19        android:icon="@mipmap/ic_launcher"
 19-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:10:9-43
-20        android:label="@string/app_name"
-20-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:11:9-41
+20        android:label="Urinalysis for Diabetes"
+20-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:11:9-48
 21        android:roundIcon="@mipmap/ic_launcher_round"
 21-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
@@ -48,26 +48,35 @@
 28        <activity android:name="com.sabry.log.homescreen" />
 28-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:18:9-48
 28-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:18:19-45
-29        <activity android:name="com.sabry.log.Reg" />
-29-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:9-41
-29-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:19-38
-30        <activity android:name="com.sabry.log.NewTest" />
-30-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:9-45
-30-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:19-42
-31        <activity android:name="com.sabry.log.MainActivity" >
-31-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:9-27:20
-31-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:19-47
-32            <intent-filter>
-32-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:13-26:29
-33                <action android:name="android.intent.action.MAIN" />
-33-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:17-69
-33-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:25-66
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:17-77
-35-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:27-74
-36            </intent-filter>
-37        </activity>
-38    </application>
-39
-40</manifest>
+29        <activity android:name="com.sabry.log.Results" />
+29-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:9-45
+29-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:19-42
+30        <activity android:name="com.sabry.log.EmailActivity" />
+30-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:9-51
+30-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:19-48
+31        <activity android:name="com.sabry.log.Reg" />
+31-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:9-41
+31-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:19-38
+32        <activity android:name="com.sabry.log.NewTest" />
+32-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:9-45
+32-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:19-42
+33        <activity android:name="com.sabry.log.AboutUs" />
+33-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:9-45
+33-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:19-42
+34        <activity android:name="com.sabry.log.MainActivity" >
+34-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:24:9-30:20
+34-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:24:19-47
+35            <intent-filter>
+35-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:13-29:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:26:17-69
+36-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:26:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:28:17-77
+38-->/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:28:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>

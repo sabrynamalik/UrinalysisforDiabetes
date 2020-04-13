@@ -679,6 +679,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable icon_crop_background
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -764,7 +765,6 @@ id blocking
 id bottom
 id button2
 id button3
-id button4
 id button5
 id button6
 id buttonLogin
@@ -772,7 +772,6 @@ id buttonPanel
 id buttonReg
 id buttonReg2
 id button_Graph
-id buttonemail3
 id buttonemailresults
 id buttonpastresults
 id cancel_action
@@ -828,6 +827,8 @@ id imageView
 id info
 id invisible
 id italic
+id ketoneTxt
+id learnMoreButt
 id left
 id lightButt
 id lightLabel
@@ -861,6 +862,7 @@ id progress_horizontal
 id proximityButt
 id proximityText
 id radio
+id redCapButt
 id redcapButt
 id right
 id right_icon
@@ -928,7 +930,6 @@ id top
 id topPanel
 id tvForgot
 id tvLogout
-id tvRegisterlink
 id tvReset
 id txtEmail
 id txtLogout
@@ -937,7 +938,6 @@ id txtLogout5
 id txtLogout6
 id txtPassword
 id txtUsername
-id txt_ketone
 id txtresults1
 id txtresults2
 id txtresults3
@@ -1027,7 +1027,12 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icon_crop
+mipmap icon_crop_foreground
+mipmap icon_crop_round
+mipmap icon_cropped
 raw beep
+raw eventually
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

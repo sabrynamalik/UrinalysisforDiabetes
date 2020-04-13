@@ -91,7 +91,7 @@ public class CalcResult {
         int minIndex = 0;
         for (int i=0; i<guideColors.length; i++) {
             double angle = Math.abs(calcAngle(col, guideColors[i]));
-            Log.i("! ANGLE #######", "angle:  "+ angle+"  ind:  "+i);
+            Log.i("! ANGLE", "angle:  "+ angle+"  ind:  "+i);
             if (angle < minAngle) {
                 minAngle = angle;
                 minIndex = i;

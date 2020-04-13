@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -15,21 +16,14 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.media.CamcorderProfile;
 import android.media.MediaPlayer;
-import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
-import android.view.SurfaceHolder;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.io.File;
@@ -46,7 +40,8 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
     private boolean testStarted = false; // true if prox sensor has been triggered
     private SensorManager sensorManager;
     private Sensor proxSensor;
-    private MediaPlayer mediaPlayer;
+    private MediaPlayer beep;
+    private MediaPlayer eventually;
 
     FrameLayout preview;
     CameraPreview mPreview;
@@ -63,7 +58,9 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newtest);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.beep);
+        beep = MediaPlayer.create(this, R.raw.beep);
+        eventually = MediaPlayer.create(this, R.raw.eventually);
+
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         proxSensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
@@ -221,7 +218,8 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
             Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
             CalcResult calcResult = new CalcResult(bitmap);
             int res = calcResult.findNearest();
-            Log.i("! CALC NEAREST@@@@@@@@@@@", "" + res);
+            Log.i("! CALC NEAREST", "" + res);
+            openResultsAct(res);
 
             //make preview available again
             camera.startPreview();
@@ -304,16 +302,24 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
     }
 
     public void startTest() {
-
+        beep.start();
 
         new Handler().postDelayed(new Runnable() {
+
             @Override
             public void run() {
-                mediaPlayer.start();
+                eventually.start();
                 takePicture();
-            }
-        }, 2000); // Millisecond 1000 = 1 sec
 
+            }
+        }, 40000); // 40 seconds  40000
+
+    }
+
+    public void openResultsAct(int result) {
+        Intent intent = new Intent(this, Results.class);
+        intent.putExtra("result", ""+ result);
+        startActivity(intent);
     }
 
 

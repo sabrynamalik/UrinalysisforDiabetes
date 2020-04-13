@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/samihah/.gradle/caches/transforms-2/files-2.1/ea88890b09526096266c9c16859169ae/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/samihah/.gradle/caches/transforms-2/files-2.1/cb3ee0668a2ccffbec6ced598c9d8e79/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [com.jjoe64:graphview:4.2.2] /home/samihah/.gradle/caches/transforms-2/files-2.1/f78da4d9afd8ed0b1222813839b29120/jetified-graphview-4.2.2/AndroidManifest.xml:2:1-14:12
@@ -37,20 +37,20 @@ MERGED from [androidx.print:print:1.0.0] /home/samihah/.gradle/caches/transforms
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/samihah/.gradle/caches/transforms-2/files-2.1/1e517e060e22e5750a896c56d451ab07/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/samihah/.gradle/caches/transforms-2/files-2.1/8909bb9e572b85a1aed6ea82735a7b78/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/samihah/.gradle/caches/transforms-2/files-2.1/2541981a540b257b4ca2e11e0b5e803f/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:3:5-28
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-30:12
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:1-33:12
 		INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:2:11-69
@@ -63,7 +63,7 @@ ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/Urin
 	android:name
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:6:19-57
 application
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-28:19
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:8:5-31:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/samihah/.gradle/caches/transforms-2/files-2.1/cb3ee0668a2ccffbec6ced598c9d8e79/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/samihah/.gradle/caches/transforms-2/files-2.1/cb3ee0668a2ccffbec6ced598c9d8e79/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.jjoe64:graphview:4.2.2] /home/samihah/.gradle/caches/transforms-2/files-2.1/f78da4d9afd8ed0b1222813839b29120/jetified-graphview-4.2.2/AndroidManifest.xml:11:5-12:19
@@ -77,7 +77,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/samih
 	android:supportsRtl
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:11:9-48
 	android:roundIcon
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
@@ -102,28 +102,40 @@ activity#com.sabry.log.homescreen
 ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:18:9-48
 	android:name
 		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:18:19-45
+activity#com.sabry.log.Results
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:9-45
+	android:name
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:19-42
+activity#com.sabry.log.EmailActivity
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:9-51
+	android:name
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:19-48
 activity#com.sabry.log.Reg
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:9-41
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:9-41
 	android:name
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:19:19-38
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:19-38
 activity#com.sabry.log.NewTest
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:9-45
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:9-45
 	android:name
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:20:19-42
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:19-42
+activity#com.sabry.log.AboutUs
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:9-45
+	android:name
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:19-42
 activity#com.sabry.log.MainActivity
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:9-27:20
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:21:19-47
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:24:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:22:13-26:29
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml:28:27-74
 uses-sdk
 INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/AndroidManifest.xml
