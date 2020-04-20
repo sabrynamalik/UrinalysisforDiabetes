@@ -425,6 +425,8 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
+color icon_crop_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -863,7 +865,6 @@ id proximityButt
 id proximityText
 id radio
 id redCapButt
-id redcapButt
 id right
 id right_icon
 id right_side
@@ -930,7 +931,6 @@ id top
 id topPanel
 id tvForgot
 id tvLogout
-id tvReset
 id txtEmail
 id txtLogout
 id txtLogout3
@@ -1026,6 +1026,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap icon_crop
 mipmap icon_crop_foreground

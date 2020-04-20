@@ -22,10 +22,10 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#80FFFFFF"
-        android:text="Take New Test"
+        android:background="#BFFFFFFF"
+        android:text="Dipstick Test"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -38,13 +38,16 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#80FFFFFF"
-        android:text="Center the ketones square on the + marker. Wave hand in front of earpiece to start dipstick test (timer will start)"
+        android:layout_marginBottom="10dp"
+        android:background="#BFFFFFFF"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Center the ketones square on the + marker. Wave hand in front of earpiece to start dipstick test (timer will start at beep)"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent" />
 
     <ImageView

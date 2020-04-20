@@ -1,9 +1,15 @@
 package com.sabry.log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -13,9 +19,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.Toast;
 
+import static com.sabry.log.Reg.PREFER_NAME;
+
 public class MainActivity extends AppCompatActivity {
 
-    private static final String PREFER_NAME = "Reg";
     Button buttonLogin;
     Button redcapButt;
 
@@ -49,12 +56,6 @@ public class MainActivity extends AppCompatActivity {
         txtUsername = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
-
-        Toast.makeText(getApplicationContext(),
-                "User Login Status: " + session.isUserLoggedIn(),
-                Toast.LENGTH_LONG).show();
-
-
         // User Login button
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
 
@@ -86,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
                         uPassword = sharedPreferences.getString("txtPassword", "");
                     }
 
-                    // Object uName = null;
-                    // Object uEmail = null;
                     Log.e("! USERNAMEEEEEE", uName);
                     Log.e("! PASSWORDDDDDDDDDDDDD", uPassword);
                     if(username.equals(uName) && password.equals(uPassword)){
@@ -105,73 +104,18 @@ public class MainActivity extends AppCompatActivity {
 
                     }else{
                         // username / password doesn't match&
-                        Toast.makeText(getApplicationContext(),
-                                "Username/Password is incorrect",
-                                Toast.LENGTH_LONG).show();
                     }
                 }else{
                     // user didn't entered username or password
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter username and password",
-                            Toast.LENGTH_LONG).show();
 
                 }
 
             }
         });
     }
-    /*
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = new MenuInflater(this);
-        inflater.inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
-            case R.id.menu1:
-                Intent intent1 = new Intent(this, Login.class);
-                this.startActivity(intent1);
-                break;
-            case R.id.menu2:
-                Intent intent2 = new Intent(this, MainActivity.class);
-                this.startActivity(intent2);
-                break;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-
-        return true;
-    }
-    */
 
 
 
-
-
-  /*
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.buttonLogin:
-                User user = new User(null, null);
-                userLocalStore.storeUserData(user);
-                userLocalStore.setUserLoggedIn(true);
-
-
-                break;
-
-            case R.id.tvRegisterlink:
-                startActivity(new Intent(this, CreateAccount.class));
-                break;
-
-        }
-
-    }
-
-   */
 
 
     public void openLogHome(View view) {

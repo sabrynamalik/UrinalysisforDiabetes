@@ -5,11 +5,11 @@ import android.graphics.Color;
 import android.util.Log;
 import javax.vecmath.Vector3d;
 
-public class CalcResult {
-    Bitmap bm;
-    mColor col;
+class CalcResult {
+    private Bitmap bm;
+    private mColor col;
 
-    class mColor {
+    static class mColor {
         int red, green, blue;
 
         mColor(int r, int g, int b) {
@@ -19,21 +19,21 @@ public class CalcResult {
         }
     }
 
-    mColor col1 = new mColor(92,60,58);
-    mColor col2 = new mColor(85,53,50);
-    mColor col3 = new mColor(80,45,42);
-    mColor col4 = new mColor(58,31,41);
-    mColor col5 = new mColor(43,20,33);
+    private mColor col1 = new mColor(92, 60, 58);
+    private mColor col2 = new mColor(85, 53, 50);
+    private mColor col3 = new mColor(80, 45, 42);
+    private mColor col4 = new mColor(58, 31, 41);
+    private mColor col5 = new mColor(43, 20, 33);
 
-    mColor[] guideColors = { col1, col2, col3, col4, col5 };
-    int[] guideValues = { 5, 15, 40, 80, 160 }; //mg/dL
+    private mColor[] guideColors = { col1, col2, col3, col4, col5 };
+    private int[] guideValues = { 5, 15, 40, 80, 160 }; //mg/dL
 
     CalcResult(Bitmap bm) {
         this.bm = bm;
         getColor();
     }
 
-    public Bitmap extractCropArea(){
+    private Bitmap extractCropArea(){
         int x1, y1, x2, y2;
         int height = bm.getHeight();
         int width = bm.getWidth();
@@ -48,7 +48,7 @@ public class CalcResult {
         return croppedImageBitmap;
     }
 
-    public void getColor() {
+    private void getColor() {
         Bitmap cropped = extractCropArea();
         int i = 0, h = cropped.getHeight(), w = cropped.getWidth();
 
@@ -68,7 +68,7 @@ public class CalcResult {
 
     }
 
-    public double calcAngle(mColor one, mColor two) {
+    private double calcAngle(mColor one, mColor two) {
         // dot product
         int x1 = one.red;
         int y1 = one.green;
@@ -79,13 +79,10 @@ public class CalcResult {
 
         Vector3d vec1 = new Vector3d(x1,y1,z1);
         Vector3d vec2 = new Vector3d(x2,y2,z2);
-        int dot = x1*x2 + y1*y2 + z1*z2;
-        Log.i("!DOT ", ""+dot);
-        double angle = Math.acos(dot);
         return vec1.angle(vec2);
     }
 
-    public int findNearest() {
+    int findNearest() {
 
         double minAngle = 9999;
         int minIndex = 0;

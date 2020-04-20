@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_crop.png.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xxhdpi/icon_crop.png"
     },
@@ -40,6 +44,10 @@
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_newtest.xml.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_newtest.xml"
     },
@@ -60,16 +68,20 @@
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_about_us.xml"
     },
     {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon_crop_round.png.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xhdpi/icon_crop_round.png"
     },
     {
-        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_reg.xml.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_reg.xml"
+    },
+    {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon_crop_round.png.flat",
@@ -106,6 +118,10 @@
     {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_crop_round.png.flat",
@@ -148,6 +164,10 @@
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_main.xml"
     },
@@ -164,20 +184,20 @@
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xhdpi/icon_crop_foreground.png"
     },
     {
-        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_emailresults.xml.flat",
-        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_emailresults.xml"
-    },
-    {
-        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_results.xml.flat",
-        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_results.xml"
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_crop.png.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xxxhdpi/icon_crop.png"
     },
     {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_proximity.xml.flat",
         "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_proximity.xml"
     },
     {
-        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_crop.png.flat",
-        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/mipmap-xxxhdpi/icon_crop.png"
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_results.xml.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_results.xml"
+    },
+    {
+        "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/layout_activity_emailresults.xml.flat",
+        "source": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/src/main/res/layout/activity_emailresults.xml"
     },
     {
         "merged": "/home/samihah/AndroidStudioProjects/UrinalysisforDiabetes(APRIL)/UrinalysisforDiabetes(APRIL)/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",

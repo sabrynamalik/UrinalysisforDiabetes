@@ -45,8 +45,6 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
 
     FrameLayout preview;
     CameraPreview mPreview;
-    ImageView lastPhotoImageView;
-    TextView notifyTextView;
 
     //variables to manage permissions
     private Activity thisActivity;
@@ -67,79 +65,53 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
 
         preview = (FrameLayout) findViewById(R.id.previewFrameLayout);
 
-        //RelativeLayout crossHairs = (RelativeLayout) preview.findViewById(R.id.cross);
-
-        //Get references to View objects ----
-        //FrameLayout preview = (FrameLayout) findViewById(R.id.previewFrameLayout);
-
-        //lastPhotoImageView = (ImageView) findViewById(R.id.photoImageView);
-
-        //lastPhotoImageView.setVisibility(View.GONE); // hide upon first use
-
-        //Detect and Access Camera ----
-        //check if camera exists - may not be needed if camera is required by app
         checkCameraHardware(this);
 
         //get access to the camera
         thisActivity = this;
-        checkCameraPermission(this, thisActivity);
+        boolean hasPermission = checkCameraPermission(this, thisActivity);
+        if (hasPermission) {
+            setupCamera();
+        }
+        ImageView iView = new ImageView(this);
+        iView.setImageResource(R.drawable.ic_launcher_foreground);
+    }
+
+
+    private void setupCamera() {
         c = getCameraInstance();
 
-        //Create a Preview Class ----
-        // --- done as a new java class named "CameraPreview.java"
-
-        //Build a Preview Layout ----
-        // --- done as part of the activity_main layout file
+        //set camera to continually auto-focus
+        Camera.Parameters params = c.getParameters();
+        params.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
+        c.setParameters(params);
 
         // Create our Preview view and set it as the content of our activity.
         c.setDisplayOrientation(90);
-        Camera.Parameters parameters = c.getParameters();
-        List<Camera.Size> sizes = parameters.getSupportedPreviewSizes();
 
         mPreview = new CameraPreview(this, c);
-        ImageView iView = new ImageView(this);
-        iView.setImageResource(R.drawable.ic_launcher_foreground);
         preview.addView(mPreview);
-
-        ViewGroup.LayoutParams prms = (ViewGroup.LayoutParams) iView.getLayoutParams();
-
-        //Setup Listeners for Capture ----
-        // --- done through the Camera.PictureCallback method below
-
-        //Capture and Save Files ----
-        // --- done through the takePicture method implemented below
-
-        //Release the Camera ----
-        // --- done through the onPause method of the activity
-
     }
-/*
+
     @Override
-    public void onAttachedToWindow() {
-        super.onAttachedToWindow();
-        preview.requestLayout();
-        assert preview.getLayoutParams() != null;
-        int width = preview.getLayoutParams().width;
-        double he = width;
-        int ht = (int) (width * 0.7);
-        //preview.getLayoutParams().height = ht;
-
-        preview.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-
-        ViewGroup.LayoutParams params = preview.getLayoutParams();
-
-        Log.i("HEIGHT#######################", "" + params.width);
-
-    }
-*/
-
-    private boolean checkCameraHardware(Context context) {
-        if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)){
-            // this device has a camera
-            return true;
-        } else {
-            // no camera on this device
-            return false;
+    public void onRequestPermissionsResult(int requestCode,
+                                           String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case REQUEST_CAMERA: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted, yay! Do the
+                    // camera-related task you need to do.
+                    setupCamera();
+                } else {
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                return;
+            }
+            // other 'case' lines to check for other
+            // permissions this app might request.
         }
     }
 
@@ -162,24 +134,13 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
         return true;
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String[] permissions, int[] grantResults) {
-        switch (requestCode) {
-            case REQUEST_CAMERA: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // permission was granted, yay! Do the
-                    // camera-related task you need to do.
-                } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
-                }
-                return;
-            }
-            // other 'case' lines to check for other
-            // permissions this app might request.
+    private boolean checkCameraHardware(Context context) {
+        if (context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)){
+            // this device has a camera
+            return true;
+        } else {
+            // no camera on this device
+            return false;
         }
     }
 
@@ -224,16 +185,6 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
             //make preview available again
             camera.startPreview();
 
-            /*
-            //make image visible within the imageView
-            if (!lastPhotoImageView.isShown()) {
-                lastPhotoImageView.setVisibility(View.VISIBLE);
-            }
-            lastPhotoImageView.setImageURI(Uri.fromFile(pictureFile));
-            notifyTextView.setText("Last picture taken:\n");
-            notifyTextView.append(pictureFile.getName());
-
-             */
         }
     };
 
@@ -305,7 +256,6 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
         beep.start();
 
         new Handler().postDelayed(new Runnable() {
-
             @Override
             public void run() {
                 eventually.start();
@@ -321,6 +271,5 @@ public class NewTest extends AppCompatActivity implements SensorEventListener {
         intent.putExtra("result", ""+ result);
         startActivity(intent);
     }
-
 
 }
