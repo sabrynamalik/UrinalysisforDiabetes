@@ -19,6 +19,12 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.Toast;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.HashMap;
+
 import static com.sabry.log.Reg.PREFER_NAME;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,9 +66,24 @@ public class MainActivity extends AppCompatActivity {
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
 
         sharedPreferences = getSharedPreferences(PREFER_NAME, Context.MODE_PRIVATE);
-
+        File loginCreds = new File(getFilesDir().getPath() + File.separator + "login.txt");
+        try {
+            loginCreds.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois;
+        HashMap<String, String> hash = new HashMap<>();
+        try {
+            FileInputStream fis = new FileInputStream(loginCreds);
+            ois = new ObjectInputStream(fis);
+            hash = (HashMap<String, String>) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         // Login button click event
+        final HashMap<String, String> finalHash = hash;
         buttonLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -87,9 +108,11 @@ public class MainActivity extends AppCompatActivity {
                         uPassword = sharedPreferences.getString("txtPassword", "");
                     }
 
-                    Log.e("! USERNAMEEEEEE", uName);
-                    Log.e("! PASSWORDDDDDDDDDDDDD", uPassword);
-                    if(username.equals(uName) && password.equals(uPassword)){
+                    Log.e("! USERNAME", uName);
+                    Log.e("! PASSWORD", uPassword);
+                    //if(username.equals(uName) && password.equals(uPassword)){
+                    String pWord = finalHash.get(username);
+                    if (pWord != null && pWord.equals(password)) {
                         session.createUserLoginSession(uName,
                                 uPassword);
                         // Starting MainActivity

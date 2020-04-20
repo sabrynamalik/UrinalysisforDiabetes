@@ -10,6 +10,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,11 +46,45 @@ public class Reg extends AppCompatActivity {
         // first argument is the name of file and second is the mode, 0 is private mode
 
         sharedPreferences = getApplicationContext().getSharedPreferences("Reg", 0);
+        File loginCreds = new File(getFilesDir().getPath() + File.separator + "login.txt");
+        try {
+            loginCreds.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        ObjectInputStream ois = null;
+        FileOutputStream outStream;
+        ObjectOutputStream objOut = null;
+        HashMap<String, String> hash = new HashMap<>();
+        try {
+            FileInputStream fis = null;
+            try {
+                fis = new FileInputStream(loginCreds);
+            } catch (Exception e){
+                Log.i("! ERROR LINE 57", "LINE 57");
+                e.printStackTrace();
+            }
+            try {
+                ois = new ObjectInputStream(fis);
+            } catch (EOFException e) {
+                Log.i("! EOFE", "reg ");
+            }
+            outStream = new FileOutputStream(loginCreds);
+            objOut = new ObjectOutputStream(outStream);
 
+            // file is empty
+            if (loginCreds.length() != 0 && ois != null) {
+                hash = (HashMap<String, String>) ois.readObject();
+            }
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         // get editor to edit in file
         editor = sharedPreferences.edit();
 
+        final HashMap<String, String> finalHash = hash;
+        final ObjectOutputStream finalObjOut = objOut;
         buttonReg2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick (View v) {
@@ -56,8 +99,14 @@ public class Reg extends AppCompatActivity {
                 else if( txtPassword.getText().length()<=0){
                 }
                 else{
-                    //Set<String> set = myScores.getStringSet("key", null);
-
+                    finalHash.put(email,pass);
+                    try {
+                        finalObjOut.writeObject(finalHash);
+                        finalObjOut.flush();
+                        Log.i("! WRITE OBJECT WORKED", "onClick: ");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     Log.e("COMMIT", "commiting new account");
                     // as now we have information in string. Lets stored them with the help of editor
                     editor.putString("Name", name);
